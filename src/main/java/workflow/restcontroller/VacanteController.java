@@ -176,7 +176,7 @@ public class VacanteController {
 
     	    Vacante modificada = dto.convertToVacante(categoria, empresa);
     	    modificada.setIdVacante(idVacante); 
-
+    	 
     	    Vacante guardada = vacanteService.modificar(modificada);
 
     	    return ResponseEntity.ok(Map.of("mensaje", "Vacante actualizada con éxito", "vacante", guardada));
